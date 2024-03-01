@@ -1,53 +1,61 @@
 h1 {
-    color: pink;
-    font-family: helvetica;
-    font-size: 1.5rem;
-    background: blue;
+  color: pink;
+  font-family: helvetica;
+  font-size: 1.5rem;
+  background: blue;
 }
 
 #fun-facts {
-    color: lightblue;
+  color: lightblue;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
- 
+
 #submit {
-    background-color: #abefff;
-    padding: 10px;
-    margin: 0px 5px;
-    border-radius: 10px;
-  }
+  background-color: #abefff;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 10px;
+}
 
 #random {
-/* background-color: #bfeaad; */
-padding: 10px;
-margin: 0px 5px;
-border-radius: 10px;
-animation-name: color-change;
-animation-duration: 3s;
-animation-iteration-count: infinite;
+  background-color: #eeabff;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 10px;
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 #submit:hover {
-    background-color: #5cbcd2;
-    cursor: pointer;
-  }
-  #random:hover {
-    cursor: pointer;
-    background-color: #df7df7;
-  }
- 
+  background-color: #5cbcd2;
+  cursor: pointer;
+}
+
+#random:hover {
+  cursor: pointer;
+  background-color: #df7df7;
+}
 
 @keyframes color-change {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+  0% {
+    background-color: red;
   }
- 
- 
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: green;
+  }
+}
