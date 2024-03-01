@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>Dog Generator :)</title>
-   <link rel="stylesheet" type="text/css" href="index.css"/>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <head>
+    <title>Dog Generator :)</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
- </head>
- <body>
-   <div>
-    <h1 class="animate__animated animate__bounce">An animated element</h1>
-     <h1>Dog Generator</h1>
-     <p>This is Wallie! :)</p>
-     <p id="fun-facts">Here are my fun facts</p>
-        <div>
-            <img src = "wallie.jpeg" height = 500></img>
+  </head>
+  <body>
+    <div class="dog-container">
+      <div class="header">
+        <h1>Dog Generator</h1>
+      </div>
+      <div class="content">
+        <div class="left">
+          <div>
+            <img src = "wallie.jpeg" class="dog-picture"></img>
+          </div>
+          <div class="button-container">
+            <div id="random">Find Random Dog</div>
+            <div id="submit">Find Specific Dog</div>
+          </div>
         </div>
-     <div class="button-container">
-       <div id="random">Find Random Dog</div>
-       <div id="submit">Find Specific Dog</div>
-     </div>
-   </div>
- </body>
+        <div class="right">
+          <div>This is Wallie! :D</div>
+          <div class="fun-facts-container">
+            <div class="fun-facts-title">
+              Here are my fun facts
+            </div>
+            <ul class="fun-facts-content">
+              <li>i am joyce's dog</li>
+              <li>i'm 9 or 10 years old</li>
+              <li>i forget</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 

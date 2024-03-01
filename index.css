@@ -1,53 +1,119 @@
-h1 {
-    color: pink;
-    font-family: helvetica;
-    font-size: 1.5rem;
-    background: blue;
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
 }
 
-#fun-facts {
-    color: lightblue;
+.dog-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(239, 144, 160);
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+  justify-content: center;
+}
+
+.content {
+  height: calc(85vh - 100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 100px;
+  margin: 0 100px 0 100px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fun-facts-container {
+  display: flex;
+  flex-direction: column;
+}
+.dog-picture {
+  height: 30vw;
+  border-radius: 20px;
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
- 
+
 #submit {
-    background-color: #abefff;
-    padding: 10px;
-    margin: 0px 5px;
-    border-radius: 10px;
-  }
+  background-color: #abefff;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 10px;
+}
 
 #random {
-/* background-color: #bfeaad; */
-padding: 10px;
-margin: 0px 5px;
-border-radius: 10px;
-animation-name: color-change;
-animation-duration: 3s;
-animation-iteration-count: infinite;
+  /* background-color: #bfeaad; */
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 10px;
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 #submit:hover {
-    background-color: #5cbcd2;
-    cursor: pointer;
-  }
-  #random:hover {
-    cursor: pointer;
-    background-color: #df7df7;
-  }
- 
+  background-color: #5cbcd2;
+  cursor: pointer;
+}
+#random:hover {
+  cursor: pointer;
+  background-color: #df7df7;
+}
 
 @keyframes color-change {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+  0% {
+    background-color: red;
   }
- 
- 
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
