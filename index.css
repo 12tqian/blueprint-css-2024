@@ -35,12 +35,14 @@ h1 {
   padding-bottom: 100px;
   margin: 0 100px 0 100px;
 }
+
 .left {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .right {
   display: flex;
   flex-direction: column;
@@ -51,6 +53,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 .dog-picture {
   height: 30vw;
   border-radius: 20px;
@@ -63,6 +66,7 @@ h1 {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -96,6 +100,7 @@ h1 {
   background-color: #5cbcd2;
   cursor: pointer;
 }
+
 #random:hover {
   cursor: pointer;
   background-color: #df7df7;
@@ -105,12 +110,15 @@ h1 {
   0% {
     background-color: red;
   }
+
   25% {
     background-color: yellow;
   }
+
   50% {
     background-color: blue;
   }
+
   100% {
     background-color: green;
   }
